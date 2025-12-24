@@ -1,6 +1,6 @@
 # DFIR Case Report – TryHackMe: Disgruntled
 
-## 📌 Case Information
+## Case Information
 **Case Title:** Disgruntled 
 **Platform:** TryHackMe  
 **Analyst:** Fatima Z  
@@ -10,7 +10,7 @@ Investigate suspected insider malicious activity and determine whether anything 
 
 ---
 
-## 📝 Executive Summary
+## Executive Summary
 A disgruntled IT employee with elevated privileges abused administrative access to perform malicious activity.  
 Analysis confirmed:
 - Unauthorized user creation
@@ -22,7 +22,7 @@ This activity represents an insider threat with intentional sabotage capability.
 
 ---
 
-## 🧰 Investigation Scope & Evidence Sources
+## Investigation Scope & Evidence Sources
 The following locations and artifacts were examined:
 
 | Source | Purpose |
@@ -42,11 +42,11 @@ System timestamps | Execution & modification correlation
 
 ---
 
-# 🔍 Detailed Investigation & Findings
+# Detailed Investigation & Findings
 
 ---
 
-## 1️⃣ Privilege Escalation & Unauthorized Install Activity
+## (1) Privilege Escalation & Unauthorized Install Activity
 Log inspection revealed package installation being executed with sudo authority.
 
 ![Privilege / Install Evidence](evidence/auth-install.png)
@@ -58,7 +58,7 @@ This indicates:
 
 ---
 
-## 2️⃣ Unauthorized User Creation Identified
+## (2) Unauthorized User Creation Identified
 Search confirmed a **new system user was created**.
 
 ![Unauthorized User Created](evidence/user-created.png)
@@ -70,7 +70,7 @@ This suggests:
 
 ---
 
-## 3️⃣ Suspicious Privilege Modification via visudo
+## (3) Suspicious Privilege Modification via visudo
 Authentication logs revealed usage of **visudo**.
 
 ![Visudo Modification](evidence/visudo.png)
@@ -79,7 +79,7 @@ This implies direct tampering with sudo privileges — a significant red flag in
 
 ---
 
-## 4️⃣ Discovery of Malicious Script Attempt
+## (4) Discovery of Malicious Script Attempt
 Investigation into activity history revealed a script file accessed via `vi`.
 
 ![Malicious Script Identified](evidence/script-found.png)
@@ -91,7 +91,7 @@ This raised suspicion of:
 
 ---
 
-## 5️⃣ Bash History Confirms Script Modification
+## (5) Bash History Confirms Script Modification
 Reviewing `.bash_history` confirmed modification events.
 
 ![Bash History Evidence](evidence/bash-history.png)
@@ -104,7 +104,7 @@ Findings showed:
 
 ---
 
-## 6️⃣ viminfo Reveals File Rename and Relocation
+## (6) viminfo Reveals File Rename and Relocation
 `.viminfo` confirmed the malicious script was renamed to appear legitimate:
 
 - Original: `bomb.sh`
@@ -120,7 +120,7 @@ This indicates:
 
 ---
 
-## 7️⃣ Binary Directory Review Confirms Script Placement
+## (7) Binary Directory Review Confirms Script Placement
 Listing `/bin` verified the presence and timestamp consistency.
 
 ![Script in /bin](evidence/os-update-file.png)
@@ -129,7 +129,7 @@ This confirms staged execution preparation.
 
 ---
 
-## 8️⃣ Persistence Mechanism via Cron
+## (8) Persistence Mechanism via Cron
 Reviewing `/etc/crontab` confirmed scheduled execution.
 
 ![Cron Persistence](evidence/cron.png)
@@ -141,19 +141,19 @@ Decoded cron timing:
 
 ---
 
-# 🕒 Timeline of Events
-1️⃣ User performs unauthorized privileged installation  
-2️⃣ New system user created  
-3️⃣ visudo executed to manipulate privileges  
-4️⃣ Script “bomb.sh” created and edited  
-5️⃣ Script renamed → `os-update.sh`  
-6️⃣ Script moved to `/bin`  
-7️⃣ Cron configured  
-8️⃣ Persistence established (08:00 AM daily)
+# Timeline of Events
+1) User performs unauthorized privileged installation  
+2) New system user created  
+3) visudo executed to manipulate privileges  
+4) Script “bomb.sh” created and edited  
+5) Script renamed → `os-update.sh`  
+6) Script moved to `/bin`  
+7) Cron configured  
+8) Persistence established (08:00 AM daily)
 
 ---
 
-# ✅ Conclusion
+# Conclusion
 The disgruntled IT employee intentionally:
 - Abused administrative privileges
 - Created unauthorized system access
@@ -167,32 +167,32 @@ This constitutes a deliberate insider attack with persistence.
 
 ---
 
-# 🔐 Security Recommendations
+# Security Recommendations
 To mitigate and prevent recurrence:
 
-### 🛡️ Access & Privilege Controls
+### Access & Privilege Controls
 - Restrict sudo privileges to minimal trusted accounts
 - Implement strict RBAC
 - Monitor visudo execution alerts
 
-### 📝 Logging & Monitoring
+### Logging & Monitoring
 - Centralize logs (SIEM)
 - Enable alerts on:
   - new user creation
   - cron modifications
   - /bin directory changes
 
-### 🔒 Persistence Mitigation
+### Persistence Mitigation
 - Lock down `/bin` modification permissions
 - Monitor cron execution activity
 - Enforce code signing policies
 
-### 👤 Insider Threat Policy
+### Insider Threat Policy
 - Enforce HR departure IT controls
 - Credential revocation procedures
 - Continuous behavioral monitoring
 
 ---
 
-## 📎 Evidence Folder
+## Evidence Folder
 All screenshots supporting findings are located in the `evidence/` directory.
