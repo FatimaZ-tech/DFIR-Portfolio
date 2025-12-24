@@ -1,4 +1,4 @@
-# 🛡️ DFIR Portfolio
+# DFIR Portfolio
 
 Welcome to my Digital Forensics & Incident Response (DFIR) portfolio. This repository contains my practical forensic investigation case reports, primarily based on platforms like TryHackMe and real-world style scenarios.
 
@@ -13,7 +13,7 @@ Each case includes:
 
 ---
 
-## 📂 Cases
+## Cases
 
 ### Case 01 – TryHackMe: Disgruntled
 Status: Completed  
@@ -24,10 +24,10 @@ Location: `Cases/Case-01-THM-Disgruntled`
 
 ---
 
-## 🎯 Goal
+## Goal
 To build strong DFIR investigation skills through information gathering, structured analysis, evidence handling, and professional reporting standards.
 
 ---
 
-## 👤 Analyst
+## Analyst
 Fatima Z.
