@@ -15,7 +15,7 @@ Each case includes:
 
 ## 📂 Cases
 
-### Case 01 – TryHackMe: Disgruntled Employee
+### Case 01 – TryHackMe: Disgruntled
 Status: Completed  
 Focus: Insider Threat • Privilege Abuse • Obfuscation attempt  
 Location: `Cases/Case-01-THM-Disgruntled`
