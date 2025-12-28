@@ -138,11 +138,11 @@ Behavior | Targeted file searches and access
 ## Conclusion
 The forensic investigation confirms:
 
-✔ Unauthorized access occurred  
-✔ The individual intentionally searched for specific sensitive files  
-✔ Target files were accessed  
-✔ Data was successfully exfiltrated to an external service (Pastebin)  
-✔ Threat actor identity remains unknown
+- Unauthorized access occurred  
+- The individual intentionally searched for specific sensitive files  
+- Target files were accessed  
+- Data was successfully exfiltrated to an external service (Pastebin)  
+- Threat actor identity remains unknown
 
 This was a successful in-person data theft incident involving deliberate malicious intent.
 
