@@ -16,9 +16,15 @@ Each case includes:
 ## Cases
 
 ### Case 01 – TryHackMe: Disgruntled
-Status: Completed  
-Focus: Insider Threat • Privilege Abuse • Obfuscation attempt  
-Location: `Cases/Case-01-THM-Disgruntled`
+**Status:** Completed  
+**Focus:** Insider Threat • Privilege Abuse • Obfuscation attempt  
+**Location:** `Cases/Case-01-THM-Disgruntled`
+
+### Case 02 – TryHackMe: Unattended
+
+**Status:** Completed  
+**Focus:** Physical Access • Data Exfiltration • Targeted Search Activity  
+**Location:** `Cases/Case-02-THM-Unattended`
 
 (More cases coming soon)
 
