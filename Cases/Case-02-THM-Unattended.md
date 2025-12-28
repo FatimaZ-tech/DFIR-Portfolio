@@ -23,7 +23,7 @@ The threat actor demonstrated prior knowledge of the target data, indicating del
 
 ---
 
-## 🔎 Investigation Scope & Evidence Sources
+## Investigation Scope & Evidence Sources
 
 The following locations and forensic artifacts were examined to determine activity during the period of user absence:
 
