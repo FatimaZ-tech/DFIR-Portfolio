@@ -53,7 +53,7 @@ User account information was extracted from the `SAM` hive:
 
 A suspicious user account named **bdoor** was identified.
 
-![Suspicious User Account](evidence/bdoor-user.png)
+![Suspicious User Account](Evidence/bdoor-user.png)
 
 This indicates:
 - Potential unauthorized account creation
@@ -74,7 +74,7 @@ This suggests:
 ## (4) Shared Resource Awareness
 Registry artifacts related to network shares indicated awareness of a shared folder named **RESTRICTED FILES**
 
-![Restricted Files Share](evidence/restricted-files.png)
+![Restricted Files Share](Evidence/restricted-files.png)
 
 This suggests that the user was aware of and interacted with a restricted resource likely containing sensitive data.
 
@@ -87,7 +87,7 @@ Review of registry-based recent file artifacts revealed access to:
 
 The access timestamp correlates with interaction involving restricted resources.
 
-![Secret Recipe PDF Artifact](evidence/secret-recipe-pdf.png)
+![Secret Recipe PDF Artifact](Evidence/secret-recipe-pdf.png)
 
 This indicates that the file was located and accessed on the system at that time.
 
@@ -96,7 +96,7 @@ This indicates that the file was located and accessed on the system at that time
 ## (6) Additional File Interaction
 Registry artifacts also revealed interaction with an additional **TXT file** during the same timeframe.
 
-![TXT File Artifact](evidence/txt-file.png)
+![TXT File Artifact](Evidence/txt-file.png)
 
 This may represent supporting activity related to the sensitive file like notes taken by the user
 
@@ -108,7 +108,7 @@ Registry evidence indicated execution of commands used to enumerate:
 - Network interfaces
 - Connected devices
 
-![Reconnaissance Activity](evidence/recon-commands.png)
+![Reconnaissance Activity](Evidence/recon-commands.png)
 
 This behavior aligns with reconnaissance activity following unauthorized access.
 
@@ -120,7 +120,7 @@ Analysis of the `NTUSER.DAT` hive, specifically the `WordWheelQuery` key, reveal
 - Network utility tools
 - File transfer methods using File Explorer
 
-![Search History Evidence](evidence/search-history.png)
+![Search History Evidence](Evidence/search-history.png)
 
 This demonstrates intent to identify mechanisms capable of moving files.
 
@@ -134,8 +134,8 @@ Registry-based execution artifacts revealed use of the following programs:
 - **Explorer** (file navigation)
 - **everything.exe** (file indexing and discovery)
 
-![Powershell.exe Evidence](evidence/powershell.png)
-![Everything.exe Evidence](evidence/everything-exe.png)
+![Powershell.exe Evidence](Evidence/powershell.png)
+![Everything.exe Evidence](Evidence/everything-exe.png)
 
 The presence of `everything.exe` is particularly significant, as it enables rapid system-wide file discovery.
 
