@@ -134,6 +134,7 @@ Registry-based execution artifacts revealed use of the following programs:
 - **Explorer** (file navigation)
 - **everything.exe** (file indexing and discovery)
 
+![Everything.exe Evidence](evidence/powershell.png)
 ![Everything.exe Evidence](evidence/everything-exe.png)
 
 The presence of `everything.exe` is particularly significant, as it enables rapid system-wide file discovery.
