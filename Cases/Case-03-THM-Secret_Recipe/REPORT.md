@@ -158,9 +158,9 @@ The presence of `everything.exe` is particularly significant, as it enables rapi
 # Conclusion
 Based solely on the analysis of the provided Windows registry hives, the investigation confirms unauthorized and intentional activity consistent with sensitive data discovery.
 
-Although no file system artifacts or confirmed exfiltration evidence were available, registry data clearly demonstrates that James accessed and identified the confidential coffee recipe belonging to Jasmine. The use of VPN software, reconnaissance behavior, and advanced file discovery tools further supports malicious intent.
+Although no file system artifacts or confirmed exfiltration evidence were available, registry data clearly demonstrates that James accessed and identified the confidential coffee recipe belonging to Jasmine. The use of VPN software, user creation, reconnaissance, and advanced file discovery tools further supports malicious intent.
 
-The absence of direct file copies does not negate the findings, as registry artifacts provide sufficient evidence of awareness, access, and preparation.
+The absence of direct file copies does not negate the findings, as registry artifacts provide sufficient evidence of access and preparation.
 
 **Case Outcome:**  
 Confirmed unauthorized access and sensitive data discovery involving Coffely’s secret recipe.
