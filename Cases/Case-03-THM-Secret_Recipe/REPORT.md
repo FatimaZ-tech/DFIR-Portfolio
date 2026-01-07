@@ -14,9 +14,9 @@ Analyze provided Windows registry hives to determine whether sensitive intellect
 ## Executive Summary
 Jasmine, the owner of a well-known New York coffee shop called *Coffely*, reported potential theft of her confidential coffee recipe after her work laptop was serviced by James from the IT department. The recipe is known to be stored exclusively on her work device.
 
-James’s personal machine was confiscated and analyzed after suspicion arose that he may have accessed or copied the recipe. Although no direct file copies were found on the system, registry artifacts revealed compelling evidence of unauthorized access, sensitive file discovery, reconnaissance activity, and concealment efforts.
+James’s personal machine was confiscated and analyzed after suspicion arose that he may have accessed or copied the recipe. Although no direct file copies were found on the system, registry artifacts revealed compelling evidence of unauthorized access, sensitive file discovery, reconnaissance activity, and concealment efforts with user account creation and VPN.
 
-The investigation confirms that James intentionally searched for, accessed, and identified the secret recipe file, demonstrating clear intent to misuse privileged access and potentially exfiltrate proprietary information.
+The investigation confirms that James intentionally accessed and identified the secret recipe file, demonstrating clear intent to misuse privileged access and potentially exfiltrate the confidential coffee recipe.
 
 ---
 
