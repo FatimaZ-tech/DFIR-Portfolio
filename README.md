@@ -21,10 +21,15 @@ Each case includes:
 **Location:** `Cases/Case-01-THM-Disgruntled`
 
 ### Case 02 – TryHackMe: Unattended
-
 **Status:** Completed  
 **Focus:** Physical Access • Data Exfiltration • Targeted Search Activity  
 **Location:** `Cases/Case-02-THM-Unattended`
+
+### Case 02 – TryHackMe: Secret Recipe
+**Status:** Completed  
+**Focus:** Unauthorized Access • Sensitive Data Discovery  
+**Location:** `Cases/Case-03-THM-Secret_Recipe`
+
 
 (More cases coming soon)
 
